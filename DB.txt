@@ -1,0 +1,70 @@
+create database if not exists movies;
+
+use movies;
+
+create table if not exists movies(
+movie_id int primary key auto_increment,
+movie_title varchar(100) not null,
+movie_year year not null,
+movie_genre varchar(25) not null);
+
+insert into movies
+(movie_title,movie_year,movie_genre)
+values
+('Król Lew',2019,'Family'),
+('Jak wytresować smoka',2010,'Family'),
+('Jak wytresować smoka 2',2014,'Family'),
+('Jak wytresować smoka 3',2019,'Family'),
+('Sekrety morza',2014,'Family'),
+('Shrek',2001,'Family'),
+('Shrek 2',2004,'Family'),
+('Shrek 3',2007,'Family'),
+('Był sobie pies',2017,'Family'),
+('Mulan',1998,'Family'),
+('Obcy 8 pasażer nostromo', 1979,'Horror'),
+('Palacz zwłok',1969,'Horror'),
+('Lśnienie',1980,'Horror'),
+('Wywiad z wampirem',1994,'Horror'),
+('Dracula',1992,'Horror'),
+('Frankenstein',1994,'Horror'),
+('Ouija',2016,'Horror'),
+('Zakonnica',2019,'Horror'),
+('Underworld',2003,'Horror'),
+('Incepcja',2010,'SciFi'),
+('Mroczny rycerz',2008,'SciFi'),
+('Mroczny rycerz powstaje',2012,'SciFi'),
+('Gwiezdne wojny I',1999,'SciFi'),
+('Interstellar',2014,'SciFi'),
+('Logan: Wolverine',2017,'SciFi'),
+('Marsjanin',2015,'SciFi'),
+('Matrix',1999,'SciFi');
+
+
+insert into movies(movie_title,movie_year,movie_genre)
+values
+('Władca Pierścieni I',2001,'Adventure'),
+('Władca Pierścieni II',2002,'Adventure'),
+('Władca Pierścieni III',2003,'Adventure'),
+('Wszystko za życie',2007,'Adventure'),
+('Piraci z karaibów I',2003,'Adventure'),
+('Indiana Jones III',1989,'Adventure'),
+('Most na rzece Kwai',1959,'Adventure'),
+('Jak rozpętałem II wojnę światową',1970,'Adventure'),
+('Seksmisja',1984,'Comedy'),
+('Nic śmiesznego',1995,'Comedy'),
+('Killer',1997,'Comedy'),
+('Dzień Świra',2002,'Comedy'),
+('Deadpool',2016,'Comedy'),
+('Deadpool 2',2018,'Comedy'),
+('Bruce wszechmogący',2003,'Comedy'),
+('Vabank',1981,'Comedy'),
+('Epoka Lodowcowa',2002,'Comedy'),
+('Ojciec chrzestny',1972,'Drama'),
+('Zielona mila',1999,'Drama'),
+('Forrest Gump',1994,'Drama'),
+('Joker',2019,'Drama'),
+('Piękny umysł',2001,'Drama'),
+('Człowiek z blizną',1983,'Drama'),
+('Gran Torino',2008,'Drama'),
+('Przełęcz ocalonych',2016,'Drama'),
+('Leon zawodowiec',1994,'Drama');
