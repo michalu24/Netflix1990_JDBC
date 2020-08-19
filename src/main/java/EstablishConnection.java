@@ -8,7 +8,6 @@ public class EstablishConnection {
     private String user;
     private String pswd;
     private Connection connection;
-    private ResultSet set;
 
     public EstablishConnection() {
         Properties properties = new Properties();
@@ -33,7 +32,6 @@ public class EstablishConnection {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
 
     }
 
