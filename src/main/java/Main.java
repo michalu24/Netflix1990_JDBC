@@ -5,7 +5,7 @@ import java.sql.Statement;
 public class Main {
     public static void main(String[] args) {
         EstablishConnection connection = new EstablishConnection();
-        String query = "select * from movies where movie_id = 15;";
+        String query = "select * from movies where ;";
 
         try {
             Statement statement = connection.getConnection().createStatement();
@@ -20,5 +20,10 @@ public class Main {
 
         connection.shutDownConnection();
     }
+
+//    public static void main(String[] args) {
+//        CustomerService.addCustomer("Michał","Urbański");
+//        CustomerService.deleteCustomerByFullName("Michał","Urbański");
+//    }
 
 }

@@ -1,3 +1,4 @@
+import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -23,5 +24,15 @@ public class Rent {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+    }
+
+    public void selectMovie(int movieID, Date rentDate,Date returnDate) {
+        this.movieID = movieID;
+
+
+    }
+
+    public void closeRent() {
+        this.connection.shutDownConnection();
     }
 }
